@@ -1,0 +1,201 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: 1px solid #333;
+}
+
+p {
+  font-size: 16px;
+  color: #222111;
+}
+
+h1 {
+  color: #02b3e4;
+}
+
+h3 {
+  text-align: center;
+  color: #02b3e4;
+}
+
+
+/*
+ *
+ * Header
+ *
+ */
+
+ header {
+  width: 100%;
+  display: inline-block;
+  border-bottom: 1px solid #333;
+  padding-top: 20px;
+  padding-left: 30px;
+  margin-bottom: 20px;
+  background-image: linear-gradient(to top, #ffffff , #cccccc);
+}
+
+.logo, .title {
+  float: left;
+  margin-left: 15px;
+}
+
+.udacity-logo {
+  border: none;
+  width: 80px;
+  height: 80px;
+  padding-top: 20px;
+}
+
+
+/*
+ *
+ * Content
+ *
+ */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 40px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.hero {
+  width: 100%;
+}
+
+.web-design-img {
+  max-width: 100%;
+}
+
+.my-journey {
+  width: 100%;
+}
+
+.featured-work {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.dark-grey {
+  color: #333444;
+}
+
+
+/*
+ *
+ * Footer
+ *
+ */
+
+footer {
+  width: 100%;
+  padding-left: 30px;
+  background-image: linear-gradient(to bottom, #ffffff , #cccccc);
+}
+
+#copyright {
+  padding: 20px 0;
+  margin-bottom: 0;
+}
+
+
+/*
+ *
+ * Media Queries
+ *
+ */
+
+@media screen and (max-width: 550px) {
+  body {
+    font-size: 12px;
+  }
+
+  header {
+    padding-left: 10px;
+  }
+
+  .logo, .title {
+    margin-left: 10px;
+  }
+
+  .udacity-logo {
+    max-width: 60px;
+    max-height: 60px;
+  }
+
+  .container {
+    margin: 0 10px;
+  }
+
+  .web-design-img {
+    width: 95%;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .my-journey, .featured-work-title {
+    margin: 5px 5px;
+  }
+
+  .first-work, .second-work, .third-work {
+    width: 95%;
+    margin: 5px 5px;
+  }
+
+}
+
+@media screen and (min-width: 550px) {
+  .second-work {
+    width: 46%;
+    order: +1;
+    margin: 10px auto;
+  }
+
+  .first-work, .third-work {
+    width: 46%;
+    margin: 10px auto;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  body {
+    font-size: 1.2em;
+  }
+
+  .container {
+    width: 880px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero {
+    width: 70%;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  .my-journey {
+      width: 25%;
+  }
+
+  .first-work, .second-work, .third-work {
+    width: calc((100% - 60px) / 3);
+    margin-right: 5px;
+  }
+
+  .third-work {
+    margin-right: 0;
+  }
+}
